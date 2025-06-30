@@ -1,0 +1,79 @@
+body{
+    background-color: black;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+    margin: 0 auto;
+    margin-top: 35px;
+    text-align: center;
+    background-color: bl;
+    width: 500px;
+    padding: 20px 50px;
+    border-radius: 10px; 
+    border: 2px solid rgb(210, 15, 227);
+    box-shadow: 0px 0px 20px rgb(148, 6, 243);
+    animation: move 4s infinite;
+}
+
+@keyframes move {
+    50%{box-shadow: 0px 0px 35px rgb(243, 6, 235);}
+}
+
+h1{
+    text-align: center;
+
+    font-size: 40px;
+    font-weight: 700;
+    color: #14ffe9;
+    border: 1px solid white;
+    padding: 3px 30px 7px 30px;
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px white;
+     animation: mov 4s infinite;
+
+    
+}
+@keyframes mov {
+    50%{box-shadow: 0px 0px 35px rgb(6, 243, 204);}
+}
+
+
+.main .hour .hours{
+     background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+     border-radius: 5px;
+
+}
+
+.main .hour .minutes{
+    background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+    border-radius: 5px;
+}
+
+.main .hour .seconds{
+     background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+     border-radius: 5px;
+}
+
+
+.main h2{
+     background: linear-gradient(135deg, #14ffe9, #ffeb3b, #14ffe9);
+     padding: 0px 5px;
+     border-radius: 5px;
+     color: rgb(52, 3, 245);
+     font-family: "Oswald", sans-serif;
+}
+
+.main p{
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+    background-color: transparent;
+    font-family: "Libertinus Mono", monospace;
+}
