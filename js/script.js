@@ -28,17 +28,17 @@ function formatTime(value) {
 function watch() {
   let date = new Date();
 
-  let h = date.getHours();
-  let m = date.getMinutes();
-  let s = date.getSeconds();
+  let hformet = date.getHours();
+  let mformet = date.getMinutes();
+  let sformet = date.getSeconds();
 
   // 12-hour korar jonno
-  h = h % 12;
-  h = h === 0 ? 12 : h; // 0 hole 12 dekanur jonno
+  hformet = hformet % 12;
+  hformet = hformet === 0 ? 12 : hformet; // 0 hole 12 dekanur jonno
 
-  hours.innerHTML = formatTime(h);
-  minutes.innerHTML = formatTime(m);
-  seconds.innerHTML = formatTime(s);
+  hours.innerHTML = formatTime(hformet);
+  minutes.innerHTML = formatTime(mformet);
+  seconds.innerHTML = formatTime(sformet);
 }
 
 setInterval(watch, 1000);
